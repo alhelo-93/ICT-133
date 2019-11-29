@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc285854-776a-4bdc-b069-6a9ee7841bee" name="Default Changelist" comment="" />
+    <list default="true" id="9b7cb02a-bfbe-4283-b50b-5f184786620b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,19 +13,11 @@
       <executable />
     </execution>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
-    <include_path>
-      <path value="" />
-    </include_path>
-  </component>
-  <component name="ProjectId" id="1UEsDHsoiTDHPZ6pmmq4RGa1QVI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1UI4ywx4UScD9Az5ITb6PvSf4Y1" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,41 +38,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ICT-133" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
+  <component name="RunManager" selected="PHP Built-in Web Server.ICT-130">
+    <configuration name="ICT-130" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="9094">
       <method v="2" />
     </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Built-in Web Server.ICT-130" />
+      <item itemvalue="PHP Script.index.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc285854-776a-4bdc-b069-6a9ee7841bee" name="Default Changelist" comment="" />
-      <created>1574932967675</created>
+      <changelist id="9b7cb02a-bfbe-4283-b50b-5f184786620b" name="Default Changelist" comment="" />
+      <created>1575031033590</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574932967675</updated>
-      <workItem from="1574932968776" duration="4816000" />
-      <workItem from="1574938933951" duration="844000" />
-      <workItem from="1575030873301" duration="2451000" />
+      <updated>1575031033590</updated>
+      <workItem from="1575031034717" duration="3685000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
