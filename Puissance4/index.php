@@ -59,6 +59,9 @@
         }
         echo "</tr>";
     }
+    $nameFromQueryString = $_GET['name'];
+    $Lastname = $_GET['lastename'];
+    echo "Bonjour $nameFromQueryString  $Lastname";
     ?>
 </TABLE>
 </BODY>
