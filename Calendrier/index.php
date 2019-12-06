@@ -2,73 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>"My Title"</title>
+    <title>"Calendrier"</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<?php
+
+?>
 <div class="month">
     <ul>
         <li>August<br>2017</li>
     </ul>
 </div>
-
+<?php
+$days=array("Lundi","Mardi","Mercredi","Jeudi","Venderdi","Samdi","Dimanche");
+?>
 <ul class="weekdays">
     <?php
-    for($ligne=0; $ligne< 7; $ligne++){
-    for($col=0; $col < 7; $col++){
-    echo "<li> test </li>";
-    }
 
+    for($ligne=0; $ligne< count($days); $ligne++){
+    echo "<li> $days[$ligne]</li>";
     }
     ?>
-    <li>Mo</li>
-    <li>Tu</li>
-    <li>We</li>
-    <li>Th</li>
-    <li>Fr</li>
-    <li>Sa</li>
-    <li>Su</li>
 </ul>
 
 <ul class="days">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-    <li>8</li>
-    <li>9</li>
-    <li><span class="active">10</span></li>
-    <li>11</li>
-</ul>
-<?php
-/**
- * Created BY PhpStorm.
- * Title: Calendrier
- * USER: marwan.alhelo
- * DATE: 05.12.2019
- * Time: 11:19
- */
-$days=array("Lundi","Mardi","Mercredi","Jeudi","Venderdi","Samdi","Dimanche");
-
-
-for($ligne=0; $ligne< 7; $ligne++){
-    for($col=0; $col < 7; $col++){
-        echo "<li> test </li>";
+    <?php
+    for($li=1; $li<date('t'); $li++){
+        echo "<li> $li </li>";
     }
+    ?>
 
-}
-echo "</ul>";
-echo "<ul>";
-for($ligne=0; $ligne< 7; $ligne++){
-
-    echo "<li> test </li>";
-}
-echo "</ul>";
-?>
-
+</ul>
 </body>
 </html>
 

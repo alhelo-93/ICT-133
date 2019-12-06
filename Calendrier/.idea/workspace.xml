@@ -42,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Built-in Web Server.ICT-133">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="ICT-133" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="9090">
       <method v="2" />
     </configuration>
@@ -70,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575541019267</updated>
       <workItem from="1575541020425" duration="3548000" />
+      <workItem from="1575635938033" duration="5004000" />
     </task>
     <servers />
   </component>
@@ -81,10 +82,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/index.php</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
