@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+$months=["janvier","février", "mars", "avril", "mai" ,"juin" ,"juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+$Selectmonth=$_GET['month'];
+$Selectyear =$_GET['year'];
+?>
+
 <head>
+
     <meta charset="UTF-8">
-    <title>"Calendrier"</title>
+    <?php
+    echo "<title>" ."Calendrier" .$months[$Selectmonth-1]  . "</title>"
+    ?>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <?php
 
 ?>
@@ -15,7 +26,7 @@
     </ul>
 </div>
 <?php
-$days=array("Lundi","Mardi","Mercredi","Jeudi","Venderdi","Samdi","Dimanche");
+$days=["Lundi","Mardi","Mercredi","Jeudi","Venderdi","Samdi","Dimanche"];
 ?>
 <ul class="weekdays">
     <?php
