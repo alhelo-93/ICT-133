@@ -16,6 +16,7 @@ $today = time();
     echo "<title>" . "Calendrier" . $months[$Selectmonth - 1] . "</title>"
     ?>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
@@ -55,29 +56,46 @@ $days = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"
     $month = "2019-$Selectmonth-01";
 
     // En fonction du mois trouvé on utli
+    $thismonth = strtotime($month);
 
-    $nbdays = date("t", strtotime($month));
-    $lastday= da
+    $nbdays = date("t", $thismonth);
 
+    $lastmonth = strtotime("-1 month", $thismonth);
+
+    // day of week of the first of the month ( 1-7)
     $startday = date("N", strtotime($month));
+
+    $nblastdays = date("t", $lastmonth);
+
+    $startlastdays = $nblastdays - ($startday - 2);
+
+
+    $nextmonth = 7 - ($startday -1 + $nbdays) % 7;
 
     for ($i = 0; $i < $startday - 1; $i++) {
 
-        echo "<li>" . "0" . "</li>";
-
+        echo "<li>" . $startlastdays . "</li>";
+        $startlastdays++;
     }
-
 
     $Todaynow = date("j", $today);
     for ($li = 1; $li <= $nbdays; $li++) {
-        echo "<li>";
+        echo "<li class='big'>";
         if ($li == $Todaynow) {
             echo '<span class="active">' . $li . '</span>';
         } else {
             echo $li;
         }
         echo "</li>";
+
     }
+
+    ?>
+    <?php
+    for($i=0 ; $i < $nextmonth;$i++  ) {
+        echo "<li>". ($i +1) ."</li>";
+    }
+    // faut changer la calss de jours
     ?>
 
 </ul>
