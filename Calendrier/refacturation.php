@@ -17,7 +17,6 @@ $today = time();
     echo "<title>" . "Calendrier : " . $months[$Selectmonth - 1] . "</title>"
     ?>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -138,7 +137,7 @@ $today = time();
         echo getDaysAfter($Selectyear, $Selectmonth);
         return $res;
     }
-    
+
     ?>
 
 </main>
