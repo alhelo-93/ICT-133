@@ -8,7 +8,6 @@ $Selectmonth = $_GET['month'];
 $Selectyear = $_GET['year'];
 $today = time();
 
-
 ?>
 
 <head>
