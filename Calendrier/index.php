@@ -3,6 +3,7 @@
 <?php
 // month in table to get month by number his own number of table ex:[0.1.2.3.4....]
 $months = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "Décembre"];
+$days = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 $Selectmonth = $_GET['month'];
 $Selectyear = $_GET['year'];
 $today = time();
@@ -20,6 +21,12 @@ $today = time();
 
 <body>
 <main>
+    <div class="button" id="previous">&lt;</div>
+    <div class="button" id="next">&gt;</div>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="month">
         <h1 style='color : azure'> Calendrier </h1>
         <ul>
@@ -35,9 +42,6 @@ $today = time();
         }
         ?>
     </div>
-    <?php
-    $days = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
-    ?>
     <div class="weekdays">
         <?php
         echo "<ul>";
@@ -94,7 +98,6 @@ $today = time();
                     echo $li;
                 }
                 echo "</li>";
-
             }
             ?>
 
@@ -103,9 +106,7 @@ $today = time();
             for ($i = 0; $i < $nextmonth; $i++) {
                 echo "<li class='tintafter'>" . ($i + 1) . "</li>";
             }
-
             ?>
-
         </ul>
     </div>
 </main>
