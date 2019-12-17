@@ -1,15 +1,35 @@
+:root{
+
+
+    --blue-grey-200: #bcccdc;
+}
+
+
+
+
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
-
-.big{
+/* show big  number    */
+.verybig{
     font-size: xx-large !important;
+}
+/* show number's before currant day    */
+.tintbefore  {
+    font-size: x-large !important;
+    color: #cccccc !important;
+
+}
+/* show number's after currant day    */
+.tintafter  {
+    font-size: x-large !important;
+    color: #cccccc !important;
 }
 /* Month header */
 .month {
-    padding: 70px 25px;
+    padding: 70px 0;
     width: 100%;
-    background: #1abc9c;
+    background: #537d91;
     text-align: center;
 }
 
@@ -21,15 +41,17 @@ body {font-family: Verdana, sans-serif;}
 
 .month ul li {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
+
 }
 
 /* Previous button inside month header */
 .month .prev {
     float: left;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 /* Next button */
@@ -41,8 +63,9 @@ body {font-family: Verdana, sans-serif;}
 /* Weekdays (Mon-Sun) */
 .weekdays {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 0px;
     background-color:#ddd;
+    font-size: xx-large;
 }
 
 .weekdays li {
@@ -71,7 +94,23 @@ body {font-family: Verdana, sans-serif;}
 
 /* Highlight the "current" day */
 .days li .active {
-    padding: 5px;
-    background: #1abc9c;
-    color: white !important
+    padding: 9px;
+    background: #537d91;
+    color: white !important;
+    border-radius: 50%;
+}
+.stratactive {
+    padding: 9px;
+    background: #537d91;
+    color: white !important;
+
+}
+
+main {
+    max-width: max-content;
+    margin: 2em auto 0 auto;
+    padding: 1.5em;
+    background-color: #fff;
+    border: 2px solid var(--blue-grey-200);
+    border-radius: 8px;
 }
