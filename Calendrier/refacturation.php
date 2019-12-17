@@ -35,7 +35,7 @@ $today = time();
     echo getHeader($Selectmonth, $months);
     echo '<h1 class="month" style="color: #dddddd"> ' . $Selectyear . '</h1>';
     echo '<div class="weekdays"><ul>';
-    echo  weeks($days);
+    echo weeks($days);
     echo "</div></ul>";
     echo '<ul class="days">';   //début des jours du mois
     echo getCurrantdays($Selectyear, $Selectmonth);
@@ -138,30 +138,7 @@ $today = time();
         echo getDaysAfter($Selectyear, $Selectmonth);
         return $res;
     }
-
-
-    // En fonction du mois trouvé on utli
-
-    // change format to yera-month -day
-
-    //function transfer English textual datetime description into a Unix timestamp
-
-    // day number's of each month of year
-
-    //
-
-
-    // day of week of the first of the month ( 1-7)
-
-    // day number's of last month from the selected month
-
-
-    // variable for calculate the last days form last week of last month to fill the empty cases before the first day of current month
-
-
-    // variable for calculate the last days form first week of nest month to fill the empty cases after the last day of current month
-
-
+    
     ?>
 
 </main>
