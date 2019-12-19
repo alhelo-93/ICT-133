@@ -31,7 +31,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MVC" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -88,6 +88,7 @@
       <workItem from="1576503201053" duration="1218000" />
       <workItem from="1576342725849" duration="24185000" />
       <workItem from="1576573170763" duration="5467000" />
+      <workItem from="1576745978079" duration="370000" />
       <workItem from="1576611325210" duration="537000" />
       <workItem from="1576625094086" duration="225000" />
       <workItem from="1576700981947" duration="620000" />
