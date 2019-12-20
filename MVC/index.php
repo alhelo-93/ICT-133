@@ -1,30 +1,34 @@
 <?php
+
 if(isset($_GET['action'])){
     $action = $_GET['action'];
 }
 else{
     $action= 'home';
 }
-
+require_once ('Controller/controller.php');
 switch ($action)
 {
     case 'movies';
         $title = 'Films';
        /* $content= 'Liste des films';*/
-    require_once 'movies.php';
+    require_once 'view/movies.php';
+
         break;
 
     case 'concerts';
         $title = 'conserts';
-        /*$content= 'Liste des Conserts';*/
-    require_once 'concerts.php';
+
+        showConcerts();
+
         break;
 
     default ;
         $title = 'HOme';
-        require_once 'home.php';
-       /* $content= 'Accueil';*/
+        require_once 'view/home.php';
+
         break;
 }
-require_once 'gabarit.php';
+
+
 ?>

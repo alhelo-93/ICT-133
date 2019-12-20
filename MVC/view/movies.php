@@ -23,32 +23,33 @@ $movies = [
 
 ?>
 
-    <h1>Liste des Conserts</h1>
-   <table class="table table-bordered">
-       <thead>
-       <tr>
-           <th>Titre  </th>
-           <th>Audio </th>
-           <th>showtime </th>
+    <h1>Liste des Movies</h1>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Audio</th>
+            <th>showtime</th>
 
-       </tr>
-       </thead>
-       <tbody>
-       <?php
+        </tr>
+        </thead>
+        <tbody>
+        <?php
 
-       foreach ($movies as $movie){
-           echo "<tr>";
-           echo "<td>".$movie['title']."</td>";
-           echo "<td>".$movie['audio']."</td>";
-           echo "<td>".$movie['showtime']."</td>";
-            echo"</tr>";
-       }
-       ?>
-       </tbody>
+        foreach ($movies as $movie) {
+            echo "<tr>";
+            echo "<td>" . $movie['title'] . "</td>";
+            echo "<td>" . $movie['audio'] . "</td>";
+            echo "<td>" . $movie['showtime'] . "</td>";
+            echo "</tr>";
+        }
+        ?>
+        </tbody>
 
-   </table>
+    </table>
 <?php
 
-$content= ob_get_clean();
+$content = ob_get_clean();
+require_once 'gabarit.php';
 
 ?>
