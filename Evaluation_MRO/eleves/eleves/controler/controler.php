@@ -6,7 +6,7 @@
  * DATE: 31.01.2020
  * Time: 09:11
  */
-
+require "model/model.php";
 // ajouter la function home
 function home()
 {
